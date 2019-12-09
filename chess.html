@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js" type="text/javascript"></script>
+    <script src="chess.js" type="text/javascript"></script>
+    <style type="text/css">
+    body{
+        margin: 0px;
+    }
+    .chessback {
+        width: 700px;
+        height: 871px;
+        margin: 0px;
+        background: url("img/chessboard.png") center center no-repeat;
+        float: left;
+    }
+    .chess {
+        position: absolute; 
+        margin-left: 21.4375px;
+        margin-top: 71.4375px;
+    }
+    ul {    
+        list-style: none;
+        width: fit-content;
+        margin: 0px;
+        padding: 0px;
+    }
+    li {
+        float: left;
+        width: 73.125px;
+        height: 73.125px;
+    }
+    .bt {
+        margin: 0px; 
+        padding: 0px; 
+        border: 0px; 
+        widows: 73px; 
+        height: 73px;
+    }
+    .btchoose {
+        -webkit-filter: sepia(100%); /* Chrome, Safari, Opera */
+        filter: sepia(100%);
+    }
+    </style>
+</head>
+<body>
+    <div style="width: fit-content; height: fit-content;"></div>
+    <div class="chessback">
+        <div class="chess">
+            <ul>
+                <li id="T00"></li>
+                <li id="T01"></li>
+                <li id="T02"></li>
+                <li id="T03"></li>
+                <li id="T04"></li>
+                <li id="T05"></li>
+                <li id="T06"></li>
+                <li id="T07"></li>
+                <li id="T08"></li>
+            </ul>
+            <ul>
+                <li id="T10"></li>
+                <li id="T11"></li>
+                <li id="T12"></li>
+                <li id="T13"></li>
+                <li id="T14"></li>
+                <li id="T15"></li>
+                <li id="T16"></li>
+                <li id="T17"></li>
+                <li id="T18"></li>
+            </ul>
+            <ul>
+                <li id="T20"></li>
+                <li id="T21"></li>
+                <li id="T22"></li>
+                <li id="T23"></li>
+                <li id="T24"></li>
+                <li id="T25"></li>
+                <li id="T26"></li>
+                <li id="T27"></li>
+                <li id="T28"></li>
+            </ul>
+            <ul>
+                <li id="T30"></li>
+                <li id="T31"></li>
+                <li id="T32"></li>
+                <li id="T33"></li>
+                <li id="T34"></li>
+                <li id="T35"></li>
+                <li id="T36"></li>
+                <li id="T37"></li>
+                <li id="T38"></li>
+            </ul>
+            <ul>
+                <li id="T40"></li>
+                <li id="T41"></li>
+                <li id="T42"></li>
+                <li id="T43"></li>
+                <li id="T44"></li>
+                <li id="T45"></li>
+                <li id="T46"></li>
+                <li id="T47"></li>
+                <li id="T48"></li>
+            </ul>
+
+            <ul>
+                <li id="T50"></li>
+                <li id="T51"></li>
+                <li id="T52"></li>
+                <li id="T53"></li>
+                <li id="T54"></li>
+                <li id="T55"></li>
+                <li id="T56"></li>
+                <li id="T57"></li>
+                <li id="T58"></li>
+            </ul>
+            <ul>
+                <li id="T60"></li>
+                <li id="T61"></li>
+                <li id="T62"></li>
+                <li id="T63"></li>
+                <li id="T64"></li>
+                <li id="T65"></li>
+                <li id="T66"></li>
+                <li id="T67"></li>
+                <li id="T68"></li>
+            </ul>
+            <ul>
+                <li id="T70"></li>
+                <li id="T71"></li>
+                <li id="T72"></li>
+                <li id="T73"></li>
+                <li id="T74"></li>
+                <li id="T75"></li>
+                <li id="T76"></li>
+                <li id="T77"></li>
+                <li id="T78"></li>
+            </ul>
+            <ul>
+                <li id="T80"></li>
+                <li id="T81"></li>
+                <li id="T82"></li>
+                <li id="T83"></li>
+                <li id="T84"></li>
+                <li id="T85"></li>
+                <li id="T86"></li>
+                <li id="T87"></li>
+                <li id="T88"></li>
+            </ul>
+            <ul>
+                <li id="T90"></li>
+                <li id="T91"></li>
+                <li id="T92"></li>
+                <li id="T93"></li>
+                <li id="T94"></li>
+                <li id="T95"></li>
+                <li id="T96"></li>
+                <li id="T97"></li>
+                <li id="T98"></li>
+            </ul>
+        </div>
+    </div>
+    <div style="width: 100px; height: 871px;float: left;">
+        <div style="width: 100px; height: 400px;">
+            <span id="player1"></span>
+        </div>
+        <div style="width: 100px; height: 400px; margin-top: 71px;">
+            <span id="player2"></span>
+        </div>
+    </div>
+</body>
+</html>
